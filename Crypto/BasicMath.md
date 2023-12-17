@@ -45,6 +45,7 @@ except:
 **Solve**
 - Đọc code `chall.py` ta thấy được h= k là phương án tối ưu nhất, mà k= i nên sau mỗi vòng lặp h= i. Đồng thời thấy được x*y= 1 mod(p). `Lưu ý rằng hàm pow(g, k, p)= g**k mod(p)`.
 - Nên giờ ta cần tìm x để thỏa mãn x*y= 1 mod(p) hay đó chính là tính modul nghịch đảo.
+- Sau khi có được x, ta thu được x*y 1 mod(p), mà giá trị x tiếp theo sẽ không thể bằng giá trị x ban đầu nên ta sẽ sẽ lấy x=x*(p+1) <=> x*y= x*(p+1)*y= 1*1 mod(p), Tương tự như vậy 20 lần.
 - P/s: do làm ra r nên mình cx lười dùng pwn:)))
 ```Python
 def extended_gcd(a, b):
