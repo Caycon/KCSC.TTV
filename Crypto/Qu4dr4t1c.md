@@ -23,6 +23,7 @@ while True:
 -------
 **Solve**
 - Sau khi đọc code trên ta thu được thông tin như sau:
+- 
   ![image](https://github.com/Caycon/KCSC.TTV/assets/97203151/58295edd-3908-48cd-a3c1-d8b1cb7d0857)
 - Giờ ta tiến hành tìm p theo k bằng source code sau:
 ```Python
